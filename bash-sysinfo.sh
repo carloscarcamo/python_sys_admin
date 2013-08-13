@@ -1,13 +1,13 @@
 #! /usr/bin/env bash
 
-#A system information gathering sctipt
+#A system information gathering script
 
-#command 1 
-UNAME = "uname -a"
+#Command 1
+UNAME="uname -a"
 printf "Gathering system information with the $UNAME command: \n\n"
 $UNAME
 
-#command 2
-DISKSPACE = "df -h"
+#Command 2
+DISKSPACE="df -h"
 printf "Gathering diskspace information with the $DISKSPACE command: \n\n"
 $DISKSPACE
