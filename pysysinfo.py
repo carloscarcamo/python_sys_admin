@@ -13,5 +13,6 @@ subprocess.call([uname, uname_arg])
 #command 2
 diskspace = "df"
 diskspace_arg = "-h"
-print "Gathering diskspace information $s command:\n" % diskpace
-subprocess.call([diskspace, diskspace_arg])
+print "Gathering diskspace information %s command:\n" % diskspace
+#subprocess.call([diskspace, diskspace_arg])
+subprocess.call("df -h", shell=True)
