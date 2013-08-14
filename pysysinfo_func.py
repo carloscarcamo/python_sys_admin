@@ -8,6 +8,8 @@ def uname_func():
     uname_arg = "-a"
     print "Gathering system information with %s command:\n" % uname
     subprocess.call([uname, uname_arg])
+    #another way to do it
+    #subprocess.call("uname -a", shell=True)
 
 #command 2
 def disk_func():
@@ -15,6 +17,8 @@ def disk_func():
     diskspace_arg = "-h"
     print "Gathering diskspace information with %s command:\n" % diskspace
     subprocess.call([diskspace, diskspace_arg])
+    #another way to do it
+    #subprocess.call("df -h", shell=True)
 
 #main function that call other functions
 def main():
@@ -22,4 +26,5 @@ def main():
     disk_func()
 
 #execute main function
-main()
+if __name__ == "__main__":
+    main()
